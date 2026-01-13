@@ -1,0 +1,125 @@
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+
+.work-sans-font {
+  font-family: "Work Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* shared Styles */
+.display_flex {
+  display: flex;
+}
+
+.text_gray {
+  color: #424242;
+}
+.text_light_gra {
+  color: #727272;
+}
+.bg_light {
+  background-color: rgba(255, 144, 14, 0.1);
+}
+main {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+main > section {
+  margin-top: 130px;
+}
+/* Header Styles */
+
+/* navbar related styles */
+.navbar {
+  justify-content: space-between;
+  align-items: center;
+}
+.nav_item {
+  list-style: none;
+  font-size: 1.2rem;
+  font-weight: 400;
+  margin-right: 30px;
+}
+.brand {
+  font-weight: 700;
+  font-size: 2.8rem;
+}
+.navbar,
+.banner {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+.nav_link {
+  text-decoration: none;
+}
+.banner_text {
+  max-width: 850px;
+  margin: 0 auto;
+  text-align: center;
+}
+.banner_title {
+  font-weight: 700;
+  font-size: 4rem;
+  line-height: normal;
+}
+.banner_text_p {
+  font-weight: 400;
+  font-size: 1rem;
+}
+.button_primary {
+  color: aliceblue;
+  font-size: 1.2rem;
+  font-weight: 600;
+  border-radius: 8px;
+  background-color: rgb(235, 153, 0);
+  padding: 10px 15px;
+  border: none;
+  margin-bottom: 50px;
+}
+.banner_image {
+  width: 100%;
+}
+/* team section */
+.images_container {
+  display: grid;
+  grid-template-columns: repeat(2, 2fr);
+  gap: 20px;
+}
+.team_features {
+  display: flex;
+  align-items: center;
+  gap: 80px;
+}
+.of_our {
+  color: black;
+  font-weight: 600;
+}
+.features {
+  color: orange;
+  font-weight: 600;
+}
+.team_title {
+  font-weight: 500;
+  color: #727272;
+}
+
+@media screen and (max-width: 576px) {
+  .navbar,
+  .nav_links,
+  .team_features,
+  .display_flex {
+    flex-direction: column;
+  }
+
+  .images_container {
+    grid-template-columns: 1fr;
+  }
+  .our_features{
+    display: flex;
+    flex-direction: column;
+    align-items: center;   /* horizontal center */
+    text-align: center;    /* text center */
+    margin: 0 10px;
+  }
+}
